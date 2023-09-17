@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var casino_1 = require("./casino");
+var juegoCasino_1 = require("./juegoCasino");
+var juegoCasino_2 = require("./juegoCasino");
+var tragamonedas = new juegoCasino_1.Tragamonedas('Zombie');
+var blackJack = new juegoCasino_2.BlackJack();
+var casino = new casino_1.Casino('Las Vegas');
+casino.cargarJuego(tragamonedas);
+casino.cargarJuego(blackJack);
+casino.ingresarAlCasino();
+casino.jugar();
+casino.jugar();

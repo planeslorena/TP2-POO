@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var cuenta_1 = require("./cuenta");
+var cuenta1 = new cuenta_1.Cuenta('Lorena Planes', 2589634);
+cuenta1.retirar(200);
+cuenta1.ingresar(15000.35);
+cuenta1.mostrarCuenta();
+var cuenta2 = new cuenta_1.Cuenta('Patricio Salias', 2587412, 100000.12);
+cuenta2.retirar(5000.24);
+cuenta2.retirar(8000);
+cuenta2.mostrarCuenta();

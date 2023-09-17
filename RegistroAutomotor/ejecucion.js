@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Auto_1 = require("./Auto");
+var Registro_1 = require("./Registro");
+var auto1 = new Auto_1.Auto('Ford', 'Focus', 'AB765RT', 2015);
+var auto2 = new Auto_1.Auto('Toyota', 'Corolla', 'AC695LJ', 2018);
+var auto3 = new Auto_1.Auto('Peugeot', '408', 'AF254CC', 2020);
+var auto4 = new Auto_1.Auto('Citroen', 'C4', 'AA985KJ', 2016);
+var registro = new Registro_1.RegistroAutomotor();
+registro.darDeAlta(auto1);
+registro.darDeAlta(auto2);
+registro.darDeAlta(auto3);
+registro.darDeAlta(auto4);
+registro.consultarAuto('ab765rt');
+registro.listarAutos();
+registro.eliminarAuto('AF254CC');
+registro.listarAutos();
