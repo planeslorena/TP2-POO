@@ -17,6 +17,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Jugador = void 0;
 var MiembroClub_1 = require("./MiembroClub");
+var Deporte_1 = require("./Deporte");
 var Jugador = /** @class */ (function (_super) {
     __extends(Jugador, _super);
     function Jugador(nombre, apellido, fechaDeNacimiento, dni, tel, miembroDesde, deporte) {
@@ -24,6 +25,9 @@ var Jugador = /** @class */ (function (_super) {
         _this.deporte = deporte;
         return _this;
     }
+    Jugador.prototype.getDeporte = function () {
+        return Deporte_1.Deporte[this.deporte];
+    };
     return Jugador;
 }(MiembroClub_1.MiembroClub));
 exports.Jugador = Jugador;

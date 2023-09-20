@@ -8,5 +8,9 @@ export class Jugador extends MiembroClub {
         super(nombre, apellido, fechaDeNacimiento, dni, tel, miembroDesde);
         this.deporte = deporte;
     }
+
+    public getDeporte(): string {
+        return Deporte[this.deporte];
+    }
 }
 
